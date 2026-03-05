@@ -1,0 +1,19 @@
+# Raíz: ignores comunes a todo el repositorio
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Logs
+npm-debug.log*
