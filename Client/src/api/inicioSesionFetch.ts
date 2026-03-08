@@ -1,7 +1,6 @@
 
 export const inicioSesionFetch = async (data:unknown) => {
-    const url = 'http://localhost:5000/api/auth/login';// URL DE SERVIDOR LOCAL (EN VARIABLE DE ENTORNO .ENV)
-                                                            //URL DE SERVIDOR EN LA NUBE (EN VARIABLE DE ENTORNO .ENV)
+    const url = import.meta.env.VITE_API_AUTH_LOGIN;
 
     const params = {
         method: 'POST',

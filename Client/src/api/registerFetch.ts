@@ -1,7 +1,6 @@
 
 export const registerFetch = async (data:unknown) => {
-    const url = 'http://localhost:5000/api/auth/register';// URL DE SERVIDOR LOCAL (EN VARIABLE DE ENTORNO .ENV)
-                                                            //URL DE SERVIDOR EN LA NUBE (EN VARIABLE DE ENTORNO .ENV)
+    const url = import.meta.env.VITE_API_AUTH_REGISTER;
 
     const params = {
         method: 'POST',

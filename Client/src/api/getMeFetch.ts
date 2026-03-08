@@ -1,6 +1,5 @@
 export const getMeFetch = async (token:any) => {
-    const url = 'http://localhost:5000/api/user/me';// URL DE SERVIDOR LOCAL (EN VARIABLE DE ENTORNO .ENV)
-                                                            //URL DE SERVIDOR EN LA NUBE (EN VARIABLE DE ENTORNO .ENV)
+    const url = import.meta.env.VITE_API_USER_ME;
 
     const params = {
         method: 'GET',
